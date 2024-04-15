@@ -1,11 +1,9 @@
+
 /*------------------------------------------------------------------------------------------------------*/
 
 /* Tipografía */
 
-@font-face {
-    src: url('../tipografias/sf-pro.ttf') format('truetype');
-    font-family: 'sf-pro';
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Tipografía */
 
@@ -18,44 +16,44 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
 h1 {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     text-align: center;
     font-size: 64px;
 }
 
 h2 {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     font-size: 48px;
     margin: 20px 0 20px 0;
 }
 
 h3 {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     font-size: 32px;
 }
 
 h4 {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     font-size: 24px;
 }
 
 h5 {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     font-size: 21px;
 }
 
 p {
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #ACACAC;
     font-size: 18px;
 }
@@ -124,7 +122,7 @@ strong {
     padding-top: var(--bs-navbar-brand-padding-y);
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
     /* Le cambié el color */
     text-decoration: none;
@@ -175,7 +173,7 @@ strong {
 .nav-link {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     /* Le cambié el peso */
     color: #ACACAC;
@@ -205,7 +203,7 @@ strong {
 /* Toggler */
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-family: 'sf-pro', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1;
     color: #0D0D0D;
     /* Le cambié el color */
@@ -1114,17 +1112,17 @@ footer div ul li a {
         padding: 10px 20px;
         font-size: 16px;
         line-height: 20px;
-        margin: 25px 0 0 0; 
+        margin: 25px 0 0 0;
     }
 
     .boton-active {
         border-radius: 10px;
         padding: 10px 20px;
         font-size: 16px;
-        line-height: 20px; 
-        margin: 25px 0 0 0; 
+        line-height: 20px;
+        margin: 25px 0 0 0;
     }
-    
+
 
     .avatar {
         width: 200px;
