@@ -51,7 +51,7 @@ h4 {
 h5 {
     font-family: 'sf-pro', sans-serif;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 p {
@@ -226,16 +226,13 @@ strong {
 
 /* Chat */
 
-.chat-img {
-    z-index: 10000;
-}
-
 .chat img {
     width: 50px;
     height: 50px;
     position: fixed;
     bottom: 60px;
     right: 30px;
+    z-index: 10001;
 }
 
 .icono-gris:hover {
@@ -400,6 +397,10 @@ strong {
     text-align: left;
 }
 
+.sobre-mi {
+    z-index: 0;
+}
+
 .sobre-mi-video {
     display: flex;
     flex-direction: column;
@@ -435,7 +436,6 @@ strong {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-
 /* Sobre mí */
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -449,7 +449,7 @@ strong {
 }
 
 .perfil-profesional p {
-    text-align: justify;
+    text-align: left;
 }
 
 .perfil-profesional h2 {
@@ -501,7 +501,8 @@ strong {
 
 .forma-1 img {
     width: 150px;
-    height: 150px;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .forma-1:hover {
@@ -522,7 +523,7 @@ strong {
 .forma-2 img {
     width: 143px;
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .forma-2:hover {
@@ -543,7 +544,7 @@ strong {
 .forma-3 img {
     width: 143px;
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .forma-3:hover {
@@ -915,7 +916,7 @@ footer div ul li a {
 
 /*?-----------------------------------------------------------------------------------------------------*/
 
-/* Media Query Index */
+/*? Media Query Index */
 
 @media screen and (max-width:1200px) {
     .container-perfil-profesional {
@@ -953,11 +954,6 @@ footer div ul li a {
         flex-direction: column;
     }
 
-    .contenedor-footer {
-        display: flex;
-        flex-direction: column;
-    }
-
     .ingles:hover {
         transform: none;
         transition: none;
@@ -979,7 +975,14 @@ footer div ul li a {
         height: 25px;
         transition: none;
     }
+
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+/*------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:992px) {
     .avatar-container {
@@ -992,10 +995,12 @@ footer div ul li a {
     .sobre-mi-video img {
         height: 360px;
         width: 720px;
+        border-radius: 20px;
     }
 
     .sobre-mi-video ion-icon {
         padding: 15px;
+        font-size: 36px;
     }
 
     .contenedores-idiomas {
@@ -1006,6 +1011,8 @@ footer div ul li a {
     }
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:900px) {
     .sobre-mi {
         margin: 0 60px 60px 60px;
@@ -1014,6 +1021,12 @@ footer div ul li a {
     .sobre-mi-video img {
         height: 288px;
         width: 576px;
+        border-radius: 15px;
+    }
+
+    .sobre-mi-video ion-icon {
+        padding: 15px;
+        font-size: 32px;
     }
 
     .perfil-profesional {
@@ -1043,20 +1056,90 @@ footer div ul li a {
     .herramientas {
         margin: 60px;
     }
+
+    footer {
+        background-color: #0F0F0F;
+        margin-top: 60px;
+        padding: 60px;
+    }
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:772px) {
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 25px;
+    }
+
+    .avatar img {
+        width: 250px;
+        height: 250px;
+    }
+
     .sobre-mi-video img {
         height: 252px;
         width: 504px;
     }
-
-    .chat-img {
-        display: none;
-    }
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:700px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
+
+    .parrafo-destacado-1 {
+        font-size: 36px;
+        color: white;
+    }
+
+    .boton {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 25px 0 0 0; 
+    }
+
+    .boton-active {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 20px; 
+        margin: 25px 0 0 0; 
+    }
+    
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .presentacion {
+        padding: 30px;
+    }
 
     .herramientas img {
         height: 35px;
@@ -1064,20 +1147,202 @@ footer div ul li a {
     }
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:576px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .chat img {
+        width: 45px;
+        height: 45px;
+        bottom: 60px;
+        right: 30px;
+    }
+
+    .icono-gris:hover {
+        opacity: none;
+        transition: none;
+    }
 
     .parrafo-destacado-1 {
-        font-size: 36px;
+        font-size: 24px;
         color: white;
+    }
+
+    .parrafo-destacado-2 {
+        font-size: 16px;
+        color: white;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .presentacion {
+        padding: 30px 15px 30px 15px;
     }
 
     .sobre-mi-video img {
         height: 216px;
         width: 432px;
+        border-radius: 10px;
+    }
+
+    .sobre-mi-video ion-icon {
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    .perfil-profesional {
+        margin: 30px;
+    }
+
+    .container-perfil-profesional div {
+        width: 250px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .conocimientos {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .listado-conocimientos li {
+        font-size: 16px;
+    }
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .idiomas {
+        margin: 30px;
+    }
+
+    .herramientas {
+        margin: 30px;
+    }
+
+    .habilidades-puntuales p {
+        display: inline-block;
+        color: #ACACAC;
+        background-color: #333337;
+        padding: 5px 10px 5px 10px;
+        margin: 10px 10px 10px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.2);
+    }
+
+    .ingles {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .español {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    footer {
+        margin-top: 60px;
+        padding: 30px;
     }
 }
 
-/* Media Query Index */
+/*------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:532px) {
+    .sobre-mi-video img {
+        height: 159px;
+        width: 318px;
+    }
+
+    .softwares-1 {
+        display: none;
+    }
+
+    .newsletter {
+        display: none;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:400px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .chat img {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .sobre-mi-video img {
+        height: 120px;
+        width: 240px;
+    }
+
+    .sobre-mi-video ion-icon {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+/*? Media Query Index */
 
 /*! Index */
 
@@ -1138,7 +1403,7 @@ footer div ul li a {
 }
 
 .proyectos-identidad-visual div p {
-    text-align: justify;
+    text-align: left;
 }
 
 .proyectos-identidad-visual h2 {
@@ -1329,7 +1594,7 @@ footer div ul li a {
 }
 
 .contenedor p {
-    text-align: justify;
+    text-align: left;
 }
 
 /* Experiencia laboral */
@@ -1355,7 +1620,7 @@ footer div ul li a {
 }
 
 .educación p {
-    text-align: justify;
+    text-align: left;
 }
 
 .educación h2 {
@@ -1484,7 +1749,7 @@ footer div ul li a {
 }
 
 .servicios-identidadvisual p {
-    text-align: justify;
+    text-align: left;
 }
 
 .servicios-identidadvisual h2 {
@@ -1502,7 +1767,7 @@ footer div ul li a {
 
 .servicios-identidadvisual {
     margin: 30px 120px 60px 120px;
-    text-align: justify;
+    text-align: left;
 }
 
 .servicios-identidadvisual ol li {
