@@ -1715,6 +1715,7 @@ footer div ul li a {
 /*----------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:700px) {
+    
     h1 {
         font-size: 48px;
     }
@@ -1772,6 +1773,7 @@ footer div ul li a {
 /*----------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:576px) {
+
     h1 {
         font-size: 36px;
     }
@@ -1894,6 +1896,11 @@ footer div ul li a {
     footer {
         margin-top: 60px;
         padding: 30px;
+    }
+
+    .contenedor-footer ul li a {
+        font-size: 16px;
+        line-height: 18px
     }
 }
 
@@ -2050,45 +2057,31 @@ footer div ul li a {
 
 /*? Media Query Perfil Prodesional */
 
-@media screen and (max-width:1200px) {
-
-}
+@media screen and (max-width:1200px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:1024px) {
-
-}
+@media screen and (max-width:1024px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:772px) {
-
-}
+@media screen and (max-width:772px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:700px) {
-
-}
+@media screen and (max-width:700px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:576px) {
-
-}
+@media screen and (max-width:576px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:532px) {
-
-}
+@media screen and (max-width:532px) {}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:400px) {
-
-}
+@media screen and (max-width:400px) {}
 
 /*? Media Query Index */
 
