@@ -102,11 +102,6 @@ hr {
 
 /*? Estilos de texto */
 
-/* Etiqueta Span class "interlineado": modifica la distancia entre lineas de texto. */
-.interlineado {
-    line-height: 10px;
-}
-
 /* Etiqueta Span class "texto-precios": modifica el tamaño de fuente */
 .texto-precios {
     font-size: 64px;
@@ -989,23 +984,19 @@ footer div ul li a {
 
 
 
-/* Título */
-
-.proyecto h1 {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Título */
-
 /* Proyectos de Identidad de Marca */
 
 .proyecto {
     display: flex;
     flex-direction: column;
     margin: 120px 120px 0 120px;
+}
+
+.proyecto h1 {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .proyecto-giani-intro h2 {
@@ -1151,22 +1142,7 @@ footer div ul li a {
 
 /* Main */
 
-/* Titulo */
-
-.perfil-profesional-h1 h1 {
-    margin: 120px 60px 60px 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Titulo */
-
-/* Experiencia laboral */
-
-.experiencia-laboral h2 {
-    margin: 30px 120px 60px 120px;
-}
+/* Actualidad */
 
 .actualidad {
     display: flex;
@@ -1187,10 +1163,50 @@ footer div ul li a {
     padding: 15px;
 }
 
+/* Actualidad */
+
+/* Experiencia-laboral */
+
+.experiencia-laboral {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 120px 0 120px;
+}
+
+.experiencia-laboral h1 {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia-laboral h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Experiencia-laboral */
+
+/* Estudios */
+
+.estudios {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 120px 0 120px;
+}
+
+.estudios h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Estudios */
+
+/* Contenedor */
+
 .contenedor {
     display: flex;
     flex-direction: column;
-    margin: 30px 120px 60px 120px;
     padding: 60px;
     border-radius: 30px;
     box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.2);
@@ -1205,42 +1221,14 @@ footer div ul li a {
     margin-top: 30px;
 }
 
-/* Experiencia laboral */
+/* Contenedor */
+
+
 
 /* Separador */
 
-/* Educación */
 
 
-.formacion h2 {
-    margin: 30px 120px 60px 120px;
-}
-
-.educación {
-    margin: 30px 120px 30px 120px;
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
-    border-radius: 30px;
-    box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.2);
-    background-color: #111111;
-}
-
-.educación h2 {
-    margin: 30px 0 30px 0;
-}
-
-.educación h3 {
-    margin-bottom: 30px;
-}
-
-.educación h4 {
-    margin-top: 30px;
-}
-
-/* Educación */
-
-/* Separador */
 
 /* Curriculum Vitae */
 
@@ -1256,7 +1244,7 @@ footer div ul li a {
 
 /* Referencias */
 
-.referencias {
+/* .referencias {
     display: flex;
     flex-direction: column;
     margin: 30px 120px 30px 120px;
@@ -1295,7 +1283,7 @@ footer div ul li a {
 
 .referencias-cards img:hover {
     transform: scale(1.1);
-}
+} */
 
 /* Referencias */
 
@@ -1715,7 +1703,7 @@ footer div ul li a {
 /*----------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:700px) {
-    
+
     h1 {
         font-size: 48px;
     }
@@ -1922,22 +1910,6 @@ footer div ul li a {
 
 @media screen and (max-width:400px) {
 
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 21px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-
     p {
         font-size: 16px;
     }
@@ -2055,7 +2027,102 @@ footer div ul li a {
 /*?---------------------------------------------------------------------------------------------------------*/
 
 
+
 /*? Media Query Perfil Prodesional */
+
+@media screen and (max-width:1200px) {}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+
+    .experiencia-laboral h1 {
+        text-align: center;
+    }
+
+    .experiencia-laboral h2 {
+        text-align: center;
+    }
+
+    .experiencia-laboral {
+        margin: 120px 90px 30px 90px;
+    }
+
+    .estudios {
+        margin: 30px 90px 30px 90px;
+    }
+
+    .curriculum-vitae {
+        margin: 90px;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:772px) {
+
+    .experiencia-laboral {
+        margin: 120px 60px 30px 60px;
+    }
+
+    .estudios {
+        margin: 30px 60px 30px 60px;
+    }
+
+    .curriculum-vitae {
+        margin: 60px;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:700px) {}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:576px) {
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor {
+        padding: 30px;
+    }
+
+    .experiencia-laboral {
+        margin: 120px 30px 30px 30px;
+    }
+
+    .estudios {
+        margin: 30px;
+    }
+
+    .curriculum-vitae {
+        margin: 30px;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:532px) {}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:400px) {}
+
+/*? Media Query Index */
+
+
+
+/*?---------------------------------------------------------------------------------------------------------*/
+
+
+
+/*? Media Query Servicios */
 
 @media screen and (max-width:1200px) {}
 
