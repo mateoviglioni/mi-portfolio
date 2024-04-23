@@ -237,6 +237,8 @@ hr {
     background-color: transparent;
     border: none;
     /* También le quité el borde */
+    font-size: 24px;
+    /* Font-size para cambiar el tamaño del icono */
     border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
 }
@@ -863,6 +865,7 @@ footer div ul li a {
 /* Drechos de autor */
 
 .derechos div p {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
