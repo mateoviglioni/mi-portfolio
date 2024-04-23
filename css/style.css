@@ -1,14 +1,10 @@
 /*------------------------------------------------------------------------------------------------------*/
 
-
-
 /* Tipografía */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Tipografía */
-
-
 
 /*------------------------------------------------------------------------------------------------------*/
 
@@ -16,14 +12,7 @@
 
 
 
-
-
-
-
-
 /*!------------------------------------------------------------------------------------------------------*/
-
-
 
 /*! Reset */
 
@@ -112,138 +101,68 @@ hr {
 
 /*! Reset */
 
-
-
 /*!------------------------------------------------------------------------------------------------------*/
 
 
 
 
 
-
-
-
-
-
 /*!------------------------------------------------------------------------------------------------------*/
-
-
 
 /*! Index */
-
-
 
 /*?-----------------------------------------------------------------------------------------------------*/
 
 /*? Header */
 
-/* background */
-.navbar-color {
-    background-color: #0D0D0D;
-}
+/* - !important; - */
 
-/* background */
-
-/* brand */
 .navbar-brand {
-    padding-top: var(--bs-navbar-brand-padding-y);
-    padding-bottom: var(--bs-navbar-brand-padding-y);
-    margin-right: var(--bs-navbar-brand-margin-end);
     font-family: "Poppins", sans-serif;
     color: white;
-    /* Le cambié el color */
-    text-decoration: none;
-    white-space: nowrap;
 }
 
-/* brand */
-
-/* Active */
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     color: white;
-    /* Le cambié el color */
     font-weight: bold;
-    /* Le apliqué peso */
 }
 
-/* Active */
-
-/* nav */
 .navbar {
     position: fixed;
-    /* Añadir posición fija */
     top: 0;
-    /* Asegurar que esté en la parte superior */
     width: 100%;
-    /* Asegurar que ocupe todo el ancho */
     z-index: 9999;
-    /* Le agregué jerarquía */
     background-color: rgba(13, 13, 13, 0.9);
-    /* Le cambié el color */
     padding: 30px;
-    /* Le agregué padding */
     --bs-navbar-brand-color: white;
-    /* Le cambié el color */
     --bs-navbar-brand-hover-color: white;
-    /* Le cambié el color */
     --bs-navbar-color: white;
-    /* Le cambié el color */
     --bs-navbar-hover-color: white;
-    /* Le cambié el color */
     --bs-navbar-disabled-color: white;
-    /* Le cambié el color */
     --bs-navbar-active-color: white;
-    /* Le cambié el color */
 }
 
 .nav-link {
     display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    /* Le cambié el peso */
     color: #ACACAC;
-    /* Le cambié el color */
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: none;
 }
 
 .navbar-nav {
     --bs-nav-link-color: white;
-    /* Le cambié el color */
     --bs-nav-link-hover-color: white;
-    /* Le cambié el color */
     --bs-nav-link-disabled-color: white;
-    /* Le cambié el color */
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
 }
 
-/* nav */
-
-/* Toggler */
 .navbar-toggler {
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-family: "Poppins", sans-serif;
-    line-height: 1;
     color: #0D0D0D;
-    /* Le cambié el color */
     background-color: transparent;
     border: none;
-    /* También le quité el borde */
     font-size: 24px;
-    /* Font-size para cambiar el tamaño del icono */
-    border-radius: var(--bs-navbar-toggler-border-radius);
-    transition: var(--bs-navbar-toggler-transition);
 }
-
-/* Toggler */
 
 /*? Header */
 
