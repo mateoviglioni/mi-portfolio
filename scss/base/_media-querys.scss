@@ -61,56 +61,56 @@
             margin-top: 30px;
         }
     }
-}
 
-.idiomas {
-    .contenedores-idiomas {
-        .ingles {
-            img {
-                width: 25px;
-                height: 25px;
-                margin: 10px;
-                overflow: hidden;
-
-                &:hover {
+    .idiomas {
+        .contenedores-idiomas {
+            .ingles {
+                img {
                     width: 25px;
                     height: 25px;
+                    margin: 10px;
+                    overflow: hidden;
+
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                        transition: none;
+                    }
+                }
+
+                &:hover {
+                    transform: none;
                     transition: none;
                 }
             }
 
-            &:hover {
-                transform: none;
-                transition: none;
-            }
-        }
-
-        .español {
-            img {
-                width: 25px;
-                height: 25px;
-                margin: 10px;
-                overflow: hidden;
-
-                &:hover {
+            .español {
+                img {
                     width: 25px;
                     height: 25px;
+                    margin: 10px;
+                    overflow: hidden;
+
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                        transition: none;
+                    }
+                }
+
+                &:hover {
+                    transform: none;
                     transition: none;
                 }
-            }
-
-            &:hover {
-                transform: none;
-                transition: none;
             }
         }
     }
-}
 
-footer {
-    .footer-contenedor {
-        display: flex;
-        flex-direction: column;
+    footer {
+        .footer-contenedor {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 

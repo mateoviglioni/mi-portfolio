@@ -574,7 +574,7 @@ hr {
 .formulario {
   display: flex;
   justify-content: space-between;
-  margin: 30px 120px 30px 60px;
+  margin: 30px 120px 30px 120px;
   align-items: top; }
 
 .formulario-contacto {
@@ -752,39 +752,34 @@ footer {
   .conocimientos .listado-conocimientos {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px; } }
-
-.idiomas .contenedores-idiomas .ingles img {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-  overflow: hidden; }
-  .idiomas .contenedores-idiomas .ingles img:hover {
+    margin-top: 30px; }
+  .idiomas .contenedores-idiomas .ingles img {
     width: 25px;
     height: 25px;
+    margin: 10px;
+    overflow: hidden; }
+    .idiomas .contenedores-idiomas .ingles img:hover {
+      width: 25px;
+      height: 25px;
+      transition: none; }
+  .idiomas .contenedores-idiomas .ingles:hover {
+    transform: none;
     transition: none; }
-
-.idiomas .contenedores-idiomas .ingles:hover {
-  transform: none;
-  transition: none; }
-
-.idiomas .contenedores-idiomas .español img {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-  overflow: hidden; }
-  .idiomas .contenedores-idiomas .español img:hover {
+  .idiomas .contenedores-idiomas .español img {
     width: 25px;
     height: 25px;
+    margin: 10px;
+    overflow: hidden; }
+    .idiomas .contenedores-idiomas .español img:hover {
+      width: 25px;
+      height: 25px;
+      transition: none; }
+  .idiomas .contenedores-idiomas .español:hover {
+    transform: none;
     transition: none; }
-
-.idiomas .contenedores-idiomas .español:hover {
-  transform: none;
-  transition: none; }
-
-footer .footer-contenedor {
-  display: flex;
-  flex-direction: column; }
+  footer .footer-contenedor {
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (max-width: 1024px) {
   .avatar-container {
