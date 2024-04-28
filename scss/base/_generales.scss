@@ -1,0 +1,188 @@
+//? Tipografía
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//? Tipografía
+
+//? Animaciones
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+//? Animaciones
+
+//! Reseat
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: $color-titulos;
+    text-align: center;
+    font-size: 64px;
+}
+
+h2 {
+    color: $color-titulos;
+    font-size: 48px;
+    margin: 20px 0 20px 0;
+}
+
+h3 {
+    color: $color-titulos;
+    font-size: 32px;
+}
+
+h4 {
+    color: $color-titulos;
+    font-size: 24px;
+}
+
+h5 {
+    color: $color-titulos;
+    font-size: 21px;
+}
+
+p {
+    color: $color-parrafos;
+    font-size: 18px;
+    margin: 0;
+}
+
+body {
+    background-color: $color-background;
+}
+
+strong {
+    color: white;
+    font-weight: 500;
+}
+
+hr {
+    color: white;
+    border: solid 1px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    opacity: 0.1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+//! Reseat
+
+//! Header Bootstrap
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif !important;
+    color: $color-navbar !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: $color-navbar !important;
+    font-weight: bold !important;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background-color: $color-header !important;
+    padding: 30px !important;
+    --bs-navbar-brand-hover-color: $color-navbar !important;
+    --bs-navbar-hover-color: $color-navbar !important;
+    --bs-navbar-disabled-color: $color-navbar !important;
+    --bs-navbar-active-color: $color-navbar !important;
+}
+
+.nav-link {
+    display: block !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: normal !important;
+    color: $color-parrafos !important;
+}
+
+.navbar-toggler {
+    font-family: "Poppins", sans-serif !important;
+    color: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 24px !important;
+}
+
+//! Header Bootstrap
+
+//! Chat
+
+.chat {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+}
+
+.chat img {
+    width: 50px;
+    height: 50px;
+    z-index: 10001;
+}
+
+//! Chat
+
+//? Botones
+
+.boton {
+    color: $color-boton-p;
+    background: $color-boton-bg;
+    border-radius: 15px;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid $color-boton-br;
+    margin: 30px 0 30px 0;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    box-sizing: border-box;
+
+    &:hover {
+        background: $color-boton-hover;
+    }
+}
+
+//? Botones

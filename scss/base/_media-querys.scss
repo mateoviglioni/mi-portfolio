@@ -1,0 +1,805 @@
+//! Index
+
+@media screen and (max-width:1200px) {
+
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        margin: 0 120px 60px 120px;
+
+        div {
+            p {
+                margin-right: 0;
+            }
+        }
+
+        .sobre-mi-imagenes {
+            img {
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+
+    .container-perfil-profesional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 120px 60px 120px;
+
+        .forma-1 {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+
+        .forma-2 {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+
+        .forma-3 {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+    }
+
+    .conocimientos {
+        .listado-conocimientos {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    }
+}
+
+.idiomas {
+    .contenedores-idiomas {
+        .ingles {
+            img {
+                width: 25px;
+                height: 25px;
+                margin: 10px;
+                overflow: hidden;
+
+                &:hover {
+                    width: 25px;
+                    height: 25px;
+                    transition: none;
+                }
+            }
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+
+        .español {
+            img {
+                width: 25px;
+                height: 25px;
+                margin: 10px;
+                overflow: hidden;
+
+                &:hover {
+                    width: 25px;
+                    height: 25px;
+                    transition: none;
+                }
+            }
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+    }
+}
+
+footer {
+    .footer-contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:1024px) {
+
+    .avatar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 60px 30px 60px;
+    }
+
+    .presentacion {
+        padding: 30px;
+    }
+
+
+    .sobre-mi {
+        margin: 0 60px 60px 60px;
+    }
+
+    .idiomas {
+        .contenedores-idiomas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+    }
+
+    .perfil-profesional {
+        margin: 30px 60px 30px 60px;
+    }
+
+
+    .conocimientos {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 60px 30px 60px;
+    }
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 60px 30px 60px;
+    }
+
+    .idiomas {
+        margin: 30px 60px 30px 60px;
+    }
+
+    .herramientas {
+        margin: 30px 60px 30px 60px;
+    }
+
+    footer {
+        background-color: #0F0F0F;
+        margin-top: 60px;
+        padding: 60px;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:772px) {
+
+    .avatar-container {
+        .avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:700px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .presentacion {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+
+        div {
+            .parrafo-destacado-1 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .boton {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 25px 0 0 0;
+    }
+
+    .avatar-container {
+        .avatar {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .conocimientos {
+        .listado-conocimientos {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .herramientas {
+        img {
+            height: 35px;
+            width: 35px;
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:576px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .chat img {
+        width: 45px;
+        height: 45px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .presentacion {
+        padding: 30px 15px 30px 15px;
+
+        div {
+            .parrafo-destacado-1 {
+                font-size: 24px;
+            }
+
+            .parrafo-destacado-2 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .avatar-container {
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .sobre-mi {
+        margin: 30px;
+
+        .sobre-mi-imagenes {
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .perfil-profesional {
+        margin: 30px;
+    }
+
+
+    .container-perfil-profesional {
+        .forma-1 {
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .forma-2 {
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .forma-3 {
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+        }
+    }
+
+
+    .conocimientos {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        .listado-conocimientos {
+            .listado-contenido {
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        .habilidades-contenedor {
+            .habilidades-puntuales {
+                p {
+                    padding: 5px;
+                    margin: 5px 0;
+                    border-radius: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .idiomas {
+        margin: 30px;
+
+        .contenedores-idiomas {
+            margin: 15px;
+
+            .ingles {
+                width: 200px;
+                height: 200px;
+                border-radius: 15px;
+                margin: 15px;
+                padding: 15px;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .español {
+                width: 200px;
+                height: 200px;
+                border-radius: 15px;
+                margin: 15px;
+                padding: 15px;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .herramientas {
+        margin: 30px;
+    }
+
+    footer {
+        margin-top: 60px;
+        padding: 30px;
+
+        ul {
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:532px) {
+
+    .herramientas {
+        .softwares {
+            display: none;
+        }
+    }
+
+    footer {
+        .newsletter {
+            display: none;
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:400px) {
+
+    .sobre-mi {
+        .sobre-mi-imagenes {
+            img {
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .conocimientos {
+        .listado-conocimientos {
+            .listado-contenido {
+                ul {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! Index
+
+//! Separador --------------------------------------------------------------------------------------------------->
+
+//? Portfolio
+
+@media screen and (max-width: 1200) {
+
+    .proyecto {
+        margin: 60px;
+    }
+
+    .container-grid {
+        margin: 60px;
+
+        .container-grid-portfolio {
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-areas:
+                "logo-1 logo-2"
+                "logo-3 logo-4"
+                "logo-5 logo-6";
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .proyecto {
+        margin: 60px;
+    }
+
+    .container-grid {
+        margin: 60px;
+
+        .container-grid-portfolio {
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-areas:
+                "logo-1 logo-2"
+                "logo-3 logo-4"
+                "logo-5 logo-6";
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width: 772px) {
+
+    .container-grid {
+        .container-grid-portfolio {
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 200px 200px 200px 200px 200px;
+            grid-template-areas:
+                "logo-1"
+                "logo-2"
+                "logo-3"
+                "logo-4"
+                "logo-5"
+                "logo-6";
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width: 576px) {
+
+    .proyecto {
+        margin: 30px;
+    }
+
+    .container-grid {
+        margin: 30px;
+    }
+}
+
+//? Portfolio
+
+//? Separador --------------------------------------------------------------------------------------------------->
+
+//* Perfil Profesional
+
+@media screen and (max-width:1024px) {
+
+    .experiencia-laboral {
+        margin: 120px 60px 30px 60px;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .estudios {
+        margin: 30px 60px 30px 60px;
+    }
+
+    .curriculum-vitae {
+        margin: 60px;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:576px) {
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor {
+        padding: 30px;
+    }
+
+    .experiencia-laboral {
+        margin: 120px 30px 30px 30px;
+    }
+
+    .estudios {
+        margin: 30px;
+    }
+
+    .curriculum-vitae {
+        margin: 30px;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:500px) {
+
+    .contenedor {
+        padding: 15px;
+    }
+}
+
+//* Perfil Profesional
+
+//* Separador ---------------------------------------------------------------------------------------------------->
+
+//! Servicios
+
+@media screen and (max-width: 1200px) {
+
+    .contenedor-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cards {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width: 1024px) {
+
+    .servicios {
+        margin: 30px 60px 30px 60px;
+
+        h3 {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:700px) {
+
+    .servicios {
+        h1 {
+            margin: 120px 30px 30px 30px;
+        }
+
+        a {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:576px) {
+
+    .servicios {
+        margin: 30px;
+    }
+
+    .contenedor-cards {
+        .cards {
+            padding: 15px;
+            width: 250px;
+            height: 350px;
+            border-radius: 15px;
+
+            img {
+                top: 15px;
+                width: 35px;
+                height: auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                animation: moveUp 3s ease-in-out infinite alternate;
+            }
+        }
+    }
+}
+
+//! Servicios
+
+//! Separador ---------------------------------------------------------------------------------------------------->
+
+//? Servicios
+
+@media screen and (max-width:1024px) {
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 60px 30px 60px;
+    }
+
+    .formulario-contacto {
+        margin-left: 0;
+    }
+
+    .contacto-mateo {
+        margin: 30px 0 60px 0;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:700px) {
+
+    .formulario-contacto {
+        width: 500px;
+        padding: 60px 30px 60px 30px;
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:576px) {
+
+    .formulario {
+        margin: 30px;
+    }
+
+    .formulario-contacto {
+        width: 400px;
+        padding: 30px;
+    }
+
+    .contacto-mateo {
+        margin: 30px 0 30px 0;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:500px) {
+
+    .formulario-contacto {
+        width: 300px;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:400px) {
+
+    .contacto-mateo {
+        padding: 15px;
+        width: 250px;
+        height: auto;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:350px) {
+
+    .formulario {
+        margin: 15px;
+    }
+
+    .formulario-contacto {
+        width: 250px;
+        padding: 30px 15px 30px 15px;
+    }
+}
+
+//? Servicios
+
+//? Separador ---------------------------------------------------------------------------------------------------->

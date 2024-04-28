@@ -10,7 +10,8 @@
     <!-- Bootstrap -->
 
     <!-- .css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <!-- .css -->
 
     <!-- ionicons -->
@@ -78,31 +79,59 @@
             <div>
                 <a href="https://wa.me/+598093854912/" target="_blank" title="Chatea conmigo"><img
                         src="../img/chatcarablanco.png" alt="Chat"></a>
-                <a href="https://wa.me/+598093854912/" target="_blank" title="Chatea conmigo" class="icono-gris"><img
-                        src="../img/chatcaragris.png" alt="Chat"></a>
             </div>
         </div>
         <!-- Icono de chat -->
 
-        <div class="contacto-h1">
+        <div id="sitio-contacto" class="contacto">
             <H1>Contacto</H1>
         </div>
 
         <!-- Form -->
         <section class="formulario">
+
+            <div>
+                <div class="contacto-mateo">
+
+                    <div>
+                        <img src="../img/fotodeperfil.jpg" alt="Foto">
+                    </div>
+
+                    <div class="actualidad">
+                        <img src="../img/actualidad.png" alt="actualidad">
+                        <p>En línea.</p>
+                    </div>
+
+                    <div>
+                        <h4>Mateo Viglioni</h4>
+                        <p>Diseñador.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separador -->
+
             <div class="formulario-contacto">
                 <form action="/enviar_datos" method="POST">
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br>
-                    <label for="apellido">Apellido</label><br>
-                    <input type="text" id="apellido" name="apellido" required><br>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="celular">Celular</label><br>
-                    <input type="tel" id="celular" name="celular" required><br>
-                    <label for="mensaje">Mensaje</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre..."
+                        autocomplete="off">
+
+                    <label for="apellido">Apellidos*</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Apellido..."
+                        autocomplete="off">
+
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico..."
+                        autocomplete="off">
+
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Mensaje..."
+                        autocomplete="off"></textarea>
+
                     <input type="submit" value="Enviar">
+
                 </form>
             </div>
         </section>
@@ -115,7 +144,7 @@
     <!-- Footer -->
     <footer>
         <!-- Contactate conmigo -->
-        <section class="contactate-conmigo">
+        <section>
             <div>
                 <h3>Contáctate conmigo</h3>
                 <a class="boton" href="./pages/contacto.html">Envíame un mensaje</a>
@@ -123,7 +152,7 @@
         </section>
         <!-- Contactate conmigo -->
 
-        <section class="contenedor-footer">
+        <section class="footer-contenedor">
             <div>
                 <h4>Contacto</h4>
                 <ul>
@@ -143,7 +172,7 @@
             <div>
                 <h4>Sitio</h4>
                 <ul>
-                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="#sitio-contacto">Contacto</a></li>
                 </ul>
             </div>
 
@@ -154,7 +183,7 @@
                 <div class="input-group">
                     <input type="email" class="input" id="Email" name="Email" placeholder="ejemplo@gmail.com"
                         autocomplete="off">
-                    <input class="button--submit" value="Enviar" type="submit">
+                    <input class="button-submit" value="Enviar" type="submit">
                 </div>
             </div>
         </section>
