@@ -2,7 +2,7 @@
 
 .avatar-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 120px 60px 60px 60px;
     align-items: center;
 
@@ -82,7 +82,7 @@
 
 .sobre-mi {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 120px 60px 120px;
 
     div {
@@ -94,7 +94,7 @@
 
     .sobre-mi-imagenes {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         img {
             width: 400px;
@@ -115,8 +115,8 @@
 
 .container-perfil-profesional {
     display: flex;
-    justify-content: space-between;
-    margin: 30px 120px 60px 120px;
+    justify-content: space-evenly;
+    margin: 30px 60px 60px 60px;
 
     .forma-1 {
         display: flex;
@@ -234,7 +234,7 @@
 
     .listado-conocimientos {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 30px;
 
         .listado-contenido {
@@ -302,7 +302,7 @@
 
     .contenedores-idiomas {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-top: 15px;
 
         .ingles {
@@ -394,7 +394,7 @@
     .softwares {
         margin-top: 60px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
 
@@ -595,7 +595,7 @@
 .contenedor-cards {
     // display: flex;
     // justify-content: space-evenly;
-    @include flex (flex, space-evenly);
+    @include flex(flex, space-evenly);
 
     .cards {
         // display: flex;
@@ -660,7 +660,7 @@
 
 .formulario {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 30px 120px 30px 120px;
     align-items: top;
 }
@@ -669,7 +669,7 @@
     width: 600px;
     margin-left: 30px;
     padding: 60px;
-    background-color: $color-formulario;
+    background-color: $color-contenedor;
     border-radius: 15px;
 
     label {
@@ -701,11 +701,11 @@
     input[type="submit"] {
         width: 100%;
         padding: 12px 24px;
-        color: whitesmoke;
+        color: $color-boton-p;
         font-size: 18px;
         line-height: 24px;
-        background: #ffffff1a;
-        border: 1px solid #ffffff33;
+        background: $color-boton-bg;
+        border: 1px solid $color-boton-br;
         border-radius: 5px;
         display: inline-block;
         text-align: center;
@@ -714,7 +714,7 @@
         transition: 150ms ease-in-out;
 
         &:hover {
-            background-color: #ffffff33;
+            background-color: $color-boton-hover;
         }
     }
 
@@ -732,7 +732,7 @@
     width: 300px;
     height: auto;
     padding: 30px;
-    background-color: #0F0F0F;
+    background-color: $color-contenedor;
     border-radius: 10px;
 
     img {

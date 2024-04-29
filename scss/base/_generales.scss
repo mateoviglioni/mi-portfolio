@@ -189,14 +189,10 @@ hr {
 
 //! Mixins
 
-@mixin flex ($flex, $justify, $align, $direction) {
+@mixin flex($flex, $justify) {
     display: $flex;
     justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
 }
-
-// .contenedor-cards {@include flex (flex, space-evenly);}
 
 //! Mixins
 
@@ -207,8 +203,6 @@ hr {
     flex-direction: column;
     align-items: center;
 }
-
-// .cards {@extend %flex-column-center;}
 
 //? Extends
 
