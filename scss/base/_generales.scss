@@ -186,3 +186,31 @@ hr {
 }
 
 //? Botones
+
+//! Mixins
+
+@mixin flex ($flex, $justify, $align, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+// .contenedor-cards {@include flex (flex, space-evenly);}
+
+//! Mixins
+
+//? Extends
+
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// .cards {@extend %flex-column-center;}
+
+//? Extends
+
+
+
