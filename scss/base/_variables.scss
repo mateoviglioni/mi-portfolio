@@ -1,20 +1,35 @@
 //! Paleta de colores
 
-$color-footer: #0F0F0F;
+$color-footer: #0d0d0de6;
 $color-header: #0d0d0de6;
 $color-background: #0D0D0D;
-$color-contenedor: #111111;
 
-$color-parrafos: #acacac;
 $color-navbar: #f5f5f5;
 $color-titulos: #f5f5f5;
-$color-parrafos-destacados: #f5f5f5;
+$color-parrafos: #acacac;
+$color-parrafos-claro: #f5f5f5;
+
+$color-parrafos-destacado-1: #f5f5f5;
 
 $color-boton-p: #f5f5f5;
 $color-boton-bg: #ffffff1a;
 $color-boton-br: #ffffff33;
 $color-boton-hover: #ffffff33;
 
+$color-habilidades-bg: #333337;
+$color-habilidades-hvr: #222224;
+
+$color-contenedor: #222224;
 $color-cards: linear-gradient(to bottom, #333337, #222224);
 
+//Párrafos destacados
+$destacados: #f5f5f5, #7BC950, #F4AA05, #DC3201;
+
 //! Paleta de colores
+
+//? Sombras
+
+$sombra-oscura: 0 25px 15px -15px rgba(0, 0, 0, 0.5);
+$sombra-clara: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+
+//? Sombras

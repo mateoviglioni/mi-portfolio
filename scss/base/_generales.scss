@@ -6,6 +6,8 @@
 
 //? Animaciones
 
+// Animación - Avatar
+
 @keyframes float {
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -13,7 +15,7 @@
     }
 
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.3);
         transform: translatey(-20px);
     }
 
@@ -22,6 +24,8 @@
         transform: translatey(0px);
     }
 }
+
+// Animación - Servicios
 
 @keyframes moveUp {
     0% {
@@ -34,6 +38,36 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+// Animación - Foto Sobre mí - Contenedores
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        translate: 0 100px;
+        scale: .8;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+// Animación - h2
+
+@keyframes uncover {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -58,6 +92,9 @@ h2 {
     color: $color-titulos;
     font-size: 48px;
     margin: 20px 0 20px 0;
+    animation: uncover linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
 }
 
 h3 {
@@ -158,6 +195,10 @@ hr {
     width: 50px;
     height: 50px;
     z-index: 10001;
+
+    &:hover {
+        scale: 1.2;
+    }
 }
 
 //! Chat
@@ -206,5 +247,22 @@ hr {
 
 //? Extends
 
+//* Jerarquías de texto
 
+.jerarquia-p1 {
+    color: nth($destacados, 1); //Blanco
+}
 
+.jerarquia-p2 {
+    color: nth($destacados, 2); //Verde
+}
+
+.jerarquia-p3 {
+    color: nth($destacados, 3); //Amarillo
+}
+
+.jerarquia-p4 {
+    color: nth($destacados, 4); //Anaranjado
+}
+
+//* Jerarquías de texto

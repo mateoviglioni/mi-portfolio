@@ -276,6 +276,20 @@ hr {
 
 /* Sobre mí */
 
+@keyframes reveal {
+    from {
+        opacity: 0;
+        translate: 0 100px;
+        /* scale: .5; */
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        /* scale: 1; */
+    }
+}
+
 .sobre-mi {
     display: flex;
     justify-content: space-between;
@@ -299,6 +313,9 @@ hr {
     object-fit: cover;
     border-radius: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
 }
 
 /* Sobre mí */

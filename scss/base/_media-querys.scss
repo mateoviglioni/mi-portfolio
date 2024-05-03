@@ -2,6 +2,10 @@
 
 @media screen and (max-width:1200px) {
 
+    h2 {
+        animation: none;
+    }
+
     .sobre-mi {
         display: flex;
         flex-direction: column;
@@ -16,6 +20,7 @@
         .sobre-mi-imagenes {
             img {
                 margin: 30px 0 0 0;
+                animation: none;
             }
         }
     }
@@ -25,6 +30,7 @@
         flex-direction: column;
         align-items: center;
         margin: 30px 120px 60px 120px;
+        animation: none;
 
         .forma-1 {
             margin-bottom: 30px;
@@ -59,11 +65,20 @@
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
+            animation: none;
+        }
+    }
+
+    .habilidades {
+        .habilidades-contenedor {
+            animation: none;
         }
     }
 
     .idiomas {
         .contenedores-idiomas {
+            animation: none;
+
             .ingles {
                 img {
                     width: 25px;
@@ -103,6 +118,12 @@
                     transition: none;
                 }
             }
+        }
+    }
+
+    .herramientas {
+        .softwares {
+            animation: none;
         }
     }
 
@@ -188,6 +209,14 @@
             img {
                 width: 250px;
                 height: 250px;
+            }
+        }
+    }
+
+    .presentacion {
+        div {
+            .parrafo-destacado-2 {
+                font-size: 18px;
             }
         }
     }
@@ -645,6 +674,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: none;
 
         .cards {
             margin-bottom: 30px;
