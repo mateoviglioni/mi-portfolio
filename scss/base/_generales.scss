@@ -10,17 +10,17 @@
 
 @keyframes float {
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5);
         transform: translatey(0px);
     }
 
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5);
         transform: translatey(-20px);
     }
 
     100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5);
         transform: translatey(0px);
     }
 }
@@ -142,6 +142,15 @@ hr {
 
 //! Header Bootstrap
 
+.collapse {
+    img {
+        width: 90px;
+        height: auto;
+        margin-left: 30px;
+        overflow: hidden;
+    }
+}
+
 .navbar-brand {
     font-family: "Poppins", sans-serif !important;
     color: $color-navbar !important;
@@ -197,7 +206,8 @@ hr {
     z-index: 10001;
 
     &:hover {
-        scale: 1.2;
+        transform: scale(1.2);
+        transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     }
 }
 
@@ -207,22 +217,42 @@ hr {
 
 .boton {
     color: $color-boton-p;
-    background: $color-boton-bg;
-    border-radius: 15px;
-    padding: 12px 24px;
+    background-color: $color-boton-bg;
+    border-radius: 30px;
+    padding: 16px 24px;
     font-size: 18px;
     line-height: 24px;
-    border: 1px solid $color-boton-br;
     margin: 30px 0 30px 0;
     display: inline-block;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    transition: 150ms ease-in-out;
-    box-sizing: border-box;
+    transition: 300ms ease-in-out;
 
     &:hover {
-        background: $color-boton-hover;
+        background: $color-boton-bg-hover;
+        color: $color-boton-p-hover;
+    }
+}
+
+.mas-informacion {
+    color: $color-boton-p;
+    background-color: #333337;
+    border-radius: 30px;
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px 0 30px 0;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    position: absolute;
+    bottom: 0;
+
+    &:hover {
+        color: $color-boton-p-hover;
     }
 }
 

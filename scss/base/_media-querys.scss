@@ -1,4 +1,29 @@
+//! Header Toggler Switches
+
+@media screen and (max-width:991px) {
+    .collapse {
+        img {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+//! Header Toggler Switches
+
+
 //! Index
+
+@media screen and (max-width:1350px) {
+
+    .conocimientos {
+        .listado-conocimientos {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+    }
+}
 
 @media screen and (max-width:1200px) {
 
@@ -62,9 +87,6 @@
 
     .conocimientos {
         .listado-conocimientos {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
             animation: none;
         }
     }
@@ -85,17 +107,15 @@
                     height: 25px;
                     margin: 10px;
                     overflow: hidden;
-
-                    &:hover {
-                        width: 25px;
-                        height: 25px;
-                        transition: none;
-                    }
                 }
 
                 &:hover {
                     transform: none;
                     transition: none;
+
+                    img {
+                        transform: none;
+                    }
                 }
             }
 
@@ -105,17 +125,15 @@
                     height: 25px;
                     margin: 10px;
                     overflow: hidden;
-
-                    &:hover {
-                        width: 25px;
-                        height: 25px;
-                        transition: none;
-                    }
                 }
 
                 &:hover {
                     transform: none;
                     transition: none;
+
+                    img {
+                        transform: none;
+                    }
                 }
             }
         }
@@ -170,8 +188,6 @@
 
 
     .conocimientos {
-        display: flex;
-        flex-direction: column;
         margin: 30px 60px 30px 60px;
     }
 
@@ -268,13 +284,13 @@
 
     .avatar-container {
         .avatar {
-            width: 300px;
-            height: 300px;
-            border-radius: 15px;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
 
             img {
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
             }
         }
     }
@@ -341,17 +357,11 @@
                 font-size: 16px;
             }
         }
-    }
 
-    .avatar-container {
-        .avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 20px;
-
-            img {
-                width: 200px;
-                height: 200px;
+        div {
+            ion-icon {
+                margin: 15px 5px 0 0;
+                color: whitesmoke;
             }
         }
     }
@@ -590,7 +600,7 @@
 @media screen and (max-width: 576px) {
 
     .proyecto {
-        margin: 30px;
+        margin: 65px 30px;
     }
 
     .container-grid {
@@ -668,7 +678,7 @@
 
 //! Servicios
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
 
     .contenedor-cards {
         display: flex;
@@ -742,23 +752,21 @@
 
 //! Separador ---------------------------------------------------------------------------------------------------->
 
-//? Servicios
+//? Contacto
 
 @media screen and (max-width:1024px) {
+
+    .contacto {
+        p {
+            margin: 30px 60px 30px 60px;
+        }
+    }
 
     .formulario {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 30px 60px 30px 60px;
-    }
-
-    .formulario-contacto {
-        margin-left: 0;
-    }
-
-    .contacto-mateo {
-        margin: 30px 0 60px 0;
     }
 }
 
@@ -767,8 +775,7 @@
 @media screen and (max-width:700px) {
 
     .formulario-contacto {
-        width: 500px;
-        padding: 60px 30px 60px 30px;
+        margin: 30px;
 
         input[type="submit"] {
             padding: 10px 20px;
@@ -782,37 +789,14 @@
 
 @media screen and (max-width:576px) {
 
+    .contacto {
+        p {
+            margin: 30px;
+        }
+    }
+
     .formulario {
         margin: 30px;
-    }
-
-    .formulario-contacto {
-        width: 400px;
-        padding: 30px;
-    }
-
-    .contacto-mateo {
-        margin: 30px 0 30px 0;
-    }
-}
-
-//Separador ---------------------------------------------------------------------------------------------------->
-
-@media screen and (max-width:500px) {
-
-    .formulario-contacto {
-        width: 300px;
-    }
-}
-
-//Separador ---------------------------------------------------------------------------------------------------->
-
-@media screen and (max-width:400px) {
-
-    .contacto-mateo {
-        padding: 15px;
-        width: 250px;
-        height: auto;
     }
 }
 
@@ -823,13 +807,8 @@
     .formulario {
         margin: 15px;
     }
-
-    .formulario-contacto {
-        width: 250px;
-        padding: 30px 15px 30px 15px;
-    }
 }
 
-//? Servicios
+//? Contacto
 
 //? Separador ---------------------------------------------------------------------------------------------------->

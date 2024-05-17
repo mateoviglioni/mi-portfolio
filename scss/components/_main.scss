@@ -9,7 +9,7 @@
     .avatar {
         width: 350px;
         height: 350px;
-        border-radius: 50px;
+        border-radius: 30px;
         overflow: hidden;
         transform: translateY(0px);
         animation: float 6s ease-in-out infinite;
@@ -45,36 +45,13 @@
 
     div {
         ion-icon {
-            margin-right: 5px;
+            margin: 30px 5px 0 0;
             color: whitesmoke;
         }
 
         p {
             display: inline-block;
             text-align: center;
-            margin-bottom: 10px;
-        }
-    }
-
-    .iconos-presentacion {
-        a {
-            img {
-                width: 30px;
-                height: 30px;
-                background-color: $color-background;
-                border: 1px solid white;
-                border-radius: 5px;
-                margin: 0 5px 0 5px;
-            }
-        }
-    }
-
-    .boton-presentacion {
-        .boton {
-            ion-icon {
-                color: white;
-                margin-right: 5px;
-            }
         }
     }
 }
@@ -131,7 +108,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-image: $color-cards;
+        background-color: $color-cards;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -167,7 +144,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-image: $color-cards;
+        background-color: $color-cards;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -203,7 +180,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-image: $color-cards;
+        background-color: $color-cards;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -331,7 +308,7 @@
             margin: 30px;
             box-shadow: $sombra-oscura;
             transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-            background-image: $color-cards;
+            background-color: $color-cards;
 
             p {
                 margin: 10px;
@@ -342,16 +319,16 @@
                 height: 25px;
                 margin: 10px;
                 overflow: hidden;
-
-                &:hover {
-                    scale: 1.5;
-                    transition-duration: 0.5s;
-                }
             }
 
             &:hover {
                 transform: rotate(-5deg);
                 transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+
+                img {
+                    transform: scale(1.5);
+                    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+                }
             }
         }
 
@@ -367,18 +344,13 @@
             margin: 30px 30px 0 30px;
             box-shadow: $sombra-oscura;
             transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-            background-image: $color-cards;
+            background-color: $color-cards;
 
             img {
                 width: 25px;
                 height: 25px;
                 margin: 10px;
                 overflow: hidden;
-
-                &:hover {
-                    scale: 1.5;
-                    transition-duration: 0.5s;
-                }
             }
 
             p {
@@ -388,6 +360,11 @@
             &:hover {
                 transform: rotate(5deg);
                 transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+
+                img {
+                    transform: scale(1.5);
+                    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+                }
             }
         }
     }
@@ -460,7 +437,7 @@
 
         div {
             overflow: hidden;
-            border-radius: 25px;
+            border-radius: 30px;
             background-color: white;
         }
 
@@ -511,10 +488,6 @@
 .contenedor {
     display: flex;
     flex-direction: column;
-    padding: 60px;
-    border-radius: 30px;
-    box-shadow: $sombra-oscura;
-    background-image: $color-cards;
 
     h3 {
         margin-bottom: 30px;
@@ -612,13 +585,14 @@
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 30%;
+    margin: 30px 120px 30px 120px;
 
     .cards {
         @extend %flex-column-center;
         width: 300px;
-        height: 400px;
+        height: auto;
         border-radius: 30px;
-        background-image: linear-gradient(to bottom, #333337, #222224);
+        background-color: $color-cards;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -627,26 +601,12 @@
         }
 
         h4 {
-            font-size: 18px;
-            margin-bottom: 15px;
             text-align: center;
-        }
-
-        ul {
-            padding: 0;
-            margin: 0;
-
-            li {
-                color: $color-parrafos;
-                font-size: 16px;
-                list-style: none;
-            }
         }
 
         p {
+            margin-top: 15px;
             font-size: 16px;
-            margin-bottom: 16px;
-            text-align: center;
         }
 
         img {
@@ -664,11 +624,20 @@
 
 //! Contacto
 
-.contacto h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 120px 60px 30px 60px;
+.contacto {
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 120px 60px 30px 60px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 120px 60px 120px;
+    }
 }
 
 .formulario {
@@ -679,12 +648,8 @@
 }
 
 .formulario-contacto {
-    width: 600px;
-    margin-left: 30px;
-    padding: 60px;
-    background-image: $color-cards;
-    border-radius: 30px;
-    box-shadow: $sombra-oscura;
+    margin: 30px;
+    padding: none;
 
     label {
         display: block;
@@ -697,13 +662,13 @@
     input[type="tel"],
     textarea {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
         margin-bottom: 10px;
-        background: #ffffff1a;
+        background: #222224;
         color: $color-parrafos;
         font-size: 16px;
-        border: 1px solid #ffffff1a;
-        border-radius: 3px;
+        border: 1px solid #0D0D0D;
+        border-radius: 15px;
 
         &:focus {
             outline: none;
@@ -714,62 +679,26 @@
 
     input[type="submit"] {
         width: 100%;
-        padding: 12px 24px;
         color: $color-boton-p;
+        padding: 16px 24px;
         font-size: 18px;
         line-height: 24px;
         background: $color-boton-bg;
-        border: 1px solid $color-boton-br;
-        border-radius: 5px;
+        border: 1px solid #0D0D0D;
+        border-radius: 30px;
         display: inline-block;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        transition: 150ms ease-in-out;
+        transition: 300ms ease-in-out;
 
         &:hover {
-            background-color: $color-boton-hover;
+            background-color: $color-boton-bg-hover;
         }
     }
 
     textarea {
         resize: none;
-    }
-}
-
-.contacto-mateo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    height: auto;
-    padding: 30px;
-    background-image: $color-cards;
-    border-radius: 30px;
-    box-shadow: $sombra-oscura;
-
-    img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 30px;
-        border-radius: 50%;
-        transition: transform 0.3s ease;
-    }
-
-    .actualidad {
-        img {
-            width: 10px;
-            height: 10px;
-            margin: 0 5px 0 0;
-        }
-
-        p {
-            font-size: 16px;
-            color: $color-parrafos;
-            padding: 0;
-        }
     }
 }
 

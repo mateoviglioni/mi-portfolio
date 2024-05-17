@@ -1,8 +1,11 @@
 //! Paleta de colores
 
-$color-footer: #0d0d0de6;
-$color-header: #0d0d0de6;
-$color-background: #0D0D0D;
+// Me marie un poco con las variables pero me di cuenta ahora, luego reduzco todo a seis variables.
+
+// Generales
+$color-header: #0a0a0ae6;
+$color-background: #0A0A0A;
+$color-footer: #0D0D0D;
 
 $color-navbar: #f5f5f5;
 $color-titulos: #f5f5f5;
@@ -11,16 +14,18 @@ $color-parrafos-claro: #f5f5f5;
 
 $color-parrafos-destacado-1: #f5f5f5;
 
-$color-boton-p: #f5f5f5;
-$color-boton-bg: #ffffff1a;
+// Boton
+$color-boton-p: #acacac;
+$color-boton-p-hover: #f5f5f5;
+$color-boton-bg: #222224;
+$color-boton-bg-hover: #333337;
+
 $color-boton-br: #ffffff33;
-$color-boton-hover: #ffffff33;
 
 $color-habilidades-bg: #333337;
 $color-habilidades-hvr: #222224;
 
-$color-contenedor: #222224;
-$color-cards: linear-gradient(to bottom, #333337, #222224);
+$color-cards: #222224;
 
 //Párrafos destacados
 $destacados: #f5f5f5, #7BC950, #F4AA05, #DC3201;
