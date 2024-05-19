@@ -205,13 +205,12 @@
 
             <div>
                 <h2>Conocimientos</h2>
-                <p>Esto es todo lo que he aprendido durante mis estudios y cómo lo aplico en las diversas áreas en las
-                    que me he formado.</p>
+                <p>Resumen de lo que he aprendido durante mis estudios.</p>
             </div>
 
             <div class="listado-conocimientos">
                 <div class="listado-contenido">
-                    <h4>Diseño de Comunicación Visual</h4>
+                    <h4>Diseño de Com. Visual</h4>
                     <ul>
                         <li>Proyectos de identidad corporativa.</li>
                         <li>Diseño de envases y embalajes.</li>
@@ -225,21 +224,23 @@
                 <div class="listado-contenido">
                     <h4>Diseño UX/ UI</h4>
                     <ul>
-                        <li>Creación de prototipos interactivos.</li>
-                        <li>Diseño responsivo y accesibilidad.</li>
                         <li>Diseño de experiencia de usuario.</li>
                         <li>Diseño centrado en el usuario.</li>
-                        <li>Principios de usabilidad.</li>
+                        <li>Prototipos interactivos.</li>
+                        <li>Diseño responsivo.</li>
+                        <li>Accesibilidad.</li>
+                        <li>Usabilidad.</li>
                     </ul>
                 </div>
 
                 <div class="listado-contenido">
                     <h4>Desarrollo Web y Apps</h4>
                     <ul>
-                        <li>Desarrollo Web (HTML/ CSS).</li>
-                        <li>Desarrollo de aplicaciónes.</li>
+                        <li>HTML.</li>
+                        <LI>CSS.</LI>
                         <li>Java Script.</li>
                         <li>React Js.</li>
+                        <li>Desarrollo de aplicaciónes.</li>
                     </ul>
                 </div>
             </div>
@@ -312,23 +313,26 @@
                         Microsoft, Figma, Miro y WordPress, los cuales he aplicado en el diseño gráfico,
                         desarrollo web, desarrollo de aplicaciones y gestión de proyectos.</p>
                 </div>
-                <div class="softwares">
-                    <a href="https://www.adobe.com/es/products/illustrator.html" target="_blank"
-                        title="Adobe Illustrator"><img src="./img/illustrator.png" alt="Illustrator"></a>
-                    <a href="https://www.adobe.com/es/products/photoshop.html" target="_blank"
-                        title="Adobe Photoshop"><img src="./img/photoshop.png" alt="Photoshop"></a>
-                    <a href="https://www.adobe.com/es/products/indesign.html" target="_blank"
-                        title="Adobe InDesign"><img src="./img/indesign.png" alt="InDesign"></a>
-                    <a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code"><img
-                            src="./img/visualstudiocode.png" alt="Visual Studio Code"></a>
-                    <a href="https://www.microsoft.com/es-uy/" target="_blank" title="Microsoft"><img
-                            src="./img/microsoft.png" alt="Microsoft"></a>
-                    <a href="https://www.figma.com/" target="_blank" title="Figma"><img src="./img/figma.png"
-                            alt="Figma"></a>
-                    <a href="https://miro.com/es/" target="_blank" title="Miro"><img src="./img/miro.png"
-                            alt="Miro"></a>
-                    <a href="https://wordpress.com/es/" target="_blank" title="WordPress"><img src="./img/wordpress.png"
-                            alt="WordPress"></a>
+
+                <div class="logos">
+                    <div class="logos-slide">
+                        <a href="https://www.adobe.com/es/products/illustrator.html" target="_blank"
+                            title="Adobe Illustrator"><img src="./img/illustrator.png" alt="Illustrator"></a>
+                        <a href="https://www.adobe.com/es/products/photoshop.html" target="_blank"
+                            title="Adobe Photoshop"><img src="./img/photoshop.png" alt="Photoshop"></a>
+                        <a href="https://www.adobe.com/es/products/indesign.html" target="_blank"
+                            title="Adobe InDesign"><img src="./img/indesign.png" alt="InDesign"></a>
+                        <a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code"><img
+                                src="./img/visualstudiocode.png" alt="Visual Studio Code"></a>
+                        <a href="https://www.microsoft.com/es-uy/" target="_blank" title="Microsoft"><img
+                                src="./img/microsoft.png" alt="Microsoft"></a>
+                        <a href="https://www.figma.com/" target="_blank" title="Figma"><img src="./img/figma.png"
+                                alt="Figma"></a>
+                        <a href="https://miro.com/es/" target="_blank" title="Miro"><img src="./img/miro.png"
+                                alt="Miro"></a>
+                        <a href="https://wordpress.com/es/" target="_blank" title="WordPress"><img
+                                src="./img/wordpress.png" alt="WordPress"></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -404,6 +408,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- Bootstrap -->
+
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
 </body>
 
 <!-- Body -->

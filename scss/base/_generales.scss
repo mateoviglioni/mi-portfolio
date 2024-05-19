@@ -71,6 +71,18 @@
     }
 }
 
+// Slide
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 //? Animaciones
 
 //! Reseat
@@ -83,13 +95,13 @@
 }
 
 h1 {
-    color: $color-titulos;
+    color: $color-secundario-1;
     text-align: center;
     font-size: 64px;
 }
 
 h2 {
-    color: $color-titulos;
+    color: $color-secundario-1;
     font-size: 48px;
     margin: 20px 0 20px 0;
     animation: uncover linear both;
@@ -98,37 +110,37 @@ h2 {
 }
 
 h3 {
-    color: $color-titulos;
+    color: $color-secundario-1;
     font-size: 32px;
 }
 
 h4 {
-    color: $color-titulos;
+    color: $color-secundario-1;
     font-size: 24px;
 }
 
 h5 {
-    color: $color-titulos;
+    color: $color-secundario-1;
     font-size: 21px;
 }
 
 p {
-    color: $color-parrafos;
+    color: $color-secundario-2;
     font-size: 18px;
     margin: 0;
 }
 
 body {
-    background-color: $color-background;
+    background-color: $color-primario-2;
 }
 
 strong {
-    color: white;
+    color: $color-secundario-4;
     font-weight: 500;
 }
 
 hr {
-    color: white;
+    color: $color-secundario-4;
     border: solid 1px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -153,12 +165,12 @@ hr {
 
 .navbar-brand {
     font-family: "Poppins", sans-serif !important;
-    color: $color-navbar !important;
+    color: $color-secundario-1 !important;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: $color-navbar !important;
+    color: $color-secundario-1 !important;
     font-weight: bold !important;
 }
 
@@ -167,19 +179,19 @@ hr {
     top: 0 !important;
     width: 100% !important;
     z-index: 9999 !important;
-    background-color: $color-header !important;
+    background-color: $color-primario-1 !important;
     padding: 30px !important;
-    --bs-navbar-brand-hover-color: $color-navbar !important;
-    --bs-navbar-hover-color: $color-navbar !important;
-    --bs-navbar-disabled-color: $color-navbar !important;
-    --bs-navbar-active-color: $color-navbar !important;
+    --bs-navbar-brand-hover-color: $color-secundario-1 !important;
+    --bs-navbar-hover-color: $color-secundario-1 !important;
+    --bs-navbar-disabled-color: $color-secundario-1 !important;
+    --bs-navbar-active-color: $color-secundario-1 !important;
 }
 
 .nav-link {
     display: block !important;
     font-family: "Poppins", sans-serif !important;
     font-weight: normal !important;
-    color: $color-parrafos !important;
+    color: $color-secundario-2 !important;
 }
 
 .navbar-toggler {
@@ -198,12 +210,13 @@ hr {
     position: fixed;
     bottom: 60px;
     right: 30px;
+    z-index: 900;
 }
 
 .chat img {
     width: 50px;
     height: 50px;
-    z-index: 10001;
+    z-index: 1000;
 
     &:hover {
         transform: scale(1.2);
@@ -216,8 +229,8 @@ hr {
 //? Botones
 
 .boton {
-    color: $color-boton-p;
-    background-color: $color-boton-bg;
+    color: $color-secundario-2;
+    background-color: $color-terciario-2;
     border-radius: 30px;
     padding: 16px 24px;
     font-size: 18px;
@@ -230,14 +243,14 @@ hr {
     transition: 300ms ease-in-out;
 
     &:hover {
-        background: $color-boton-bg-hover;
-        color: $color-boton-p-hover;
+        background: $color-terciario-1;
+        color: $color-secundario-1;
     }
 }
 
 .mas-informacion {
-    color: $color-boton-p;
-    background-color: #333337;
+    color: $color-secundario-2;
+    background-color: $color-terciario-1;
     border-radius: 30px;
     padding: 14px 18px;
     font-size: 16px;
@@ -252,7 +265,7 @@ hr {
     bottom: 0;
 
     &:hover {
-        color: $color-boton-p-hover;
+        color: $color-secundario-1;
     }
 }
 

@@ -30,7 +30,7 @@
     div {
         .parrafo-destacado-1 {
             font-size: 48px;
-            color: $color-parrafos-destacado-1;
+            color: $color-secundario-1;
         }
 
         h1 {
@@ -39,14 +39,14 @@
 
         .parrafo-destacado-2 {
             font-size: 24px;
-            color: $color-parrafos-destacado-1;
+            color: $color-secundario-1;
         }
     }
 
     div {
         ion-icon {
             margin: 30px 5px 0 0;
-            color: whitesmoke;
+            color: $color-secundario-1;
         }
 
         p {
@@ -95,7 +95,7 @@
 .container-perfil-profesional {
     display: flex;
     justify-content: space-evenly;
-    margin: 30px 60px 60px 60px;
+    margin: 30px 60px 30px 60px;
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 30%;
@@ -108,7 +108,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-color: $color-cards;
+        background-color: $color-terciario-2;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -144,7 +144,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-color: $color-cards;
+        background-color: $color-terciario-2;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -180,7 +180,7 @@
         width: 300px;
         height: 400px;
         border-radius: 30px;
-        background-color: $color-cards;
+        background-color: $color-terciario-2;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -225,7 +225,7 @@
         .listado-contenido {
             align-items: center;
             flex-direction: column;
-            padding: 15px;
+            padding-right: 5px;
 
             h4 {
                 margin-bottom: 10px;
@@ -239,7 +239,7 @@
                     text-decoration: none;
                     list-style: none;
                     text-align: center;
-                    color: $color-parrafos;
+                    color: $color-secundario-2;
                     line-height: 24px;
                     font-size: 18px;
                 }
@@ -251,7 +251,7 @@
 .habilidades {
     display: flex;
     flex-direction: column;
-    margin: 60px 120px 60px 120px;
+    margin: 30px 120px 30px 120px;
 
     .habilidades-contenedor {
         display: flex;
@@ -264,8 +264,8 @@
         .habilidades-puntuales {
             p {
                 display: inline-block;
-                color: $color-parrafos;
-                background-color: $color-habilidades-bg;
+                color: $color-secundario-2;
+                background-color: $color-terciario-1;
                 padding: 10px 20px 10px 20px;
                 margin: 10px;
                 border-radius: 15px;
@@ -274,8 +274,8 @@
                 box-shadow: $sombra-oscura;
 
                 &:hover {
-                    color: $color-boton-p;
-                    background-color: $color-habilidades-hvr;
+                    color: $color-secundario-1;
+                    background-color: $color-terciario-2;
                     transition: background-color 0.3s, color 0.3s;
                 }
             }
@@ -286,12 +286,11 @@
 .idiomas {
     display: flex;
     flex-direction: column;
-    margin: 60px 120px 60px 120px;
+    margin: 30px 120px 30px 120px;
 
     .contenedores-idiomas {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 15px;
         animation: reveal linear both;
         animation-timeline: view();
         animation-range: entry 15% cover 30%;
@@ -305,10 +304,10 @@
             height: 200px;
             border-radius: 30px;
             padding: 30px;
-            margin: 30px;
+            margin: 60px;
             box-shadow: $sombra-oscura;
             transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-            background-color: $color-cards;
+            background-color: $color-terciario-2;
 
             p {
                 margin: 10px;
@@ -341,10 +340,10 @@
             height: 200px;
             border-radius: 30px;
             padding: 30px;
-            margin: 30px 30px 0 30px;
+            margin: 60px;
             box-shadow: $sombra-oscura;
             transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-            background-color: $color-cards;
+            background-color: $color-terciario-2;
 
             img {
                 width: 25px;
@@ -373,20 +372,28 @@
 .herramientas {
     display: flex;
     flex-direction: column;
-    margin: 60px 120px 60px 120px;
+    margin: 30px 120px 30px 120px;
 
-    img {
-        height: 50px;
-        width: 50px;
-    }
+    .logos {
+        overflow: hidden;
+        padding: 60px 0 0 0;
+        background: $color-primario-2;
+        white-space: nowrap;
+        position: relative;
 
-    .softwares {
-        margin-top: 60px;
-        display: flex;
-        justify-content: space-evenly;
-        animation: reveal linear both;
-        animation-timeline: view();
-        animation-range: entry 15% cover 30%;
+        &:hover .logos-slide {
+            animation-play-state: paused;
+        }
+
+        .logos-slide {
+            display: inline-block;
+            animation: 30s slide infinite linear;
+
+            img {
+                height: 60px;
+                margin: 0 30px;
+            }
+        }
     }
 }
 
@@ -438,7 +445,7 @@
         div {
             overflow: hidden;
             border-radius: 30px;
-            background-color: white;
+            background-color: $color-secundario-4;
         }
 
         img {
@@ -558,7 +565,7 @@
 
 .precios {
     font-size: 36px;
-    color: $color-parrafos-claro;
+    color: $color-secundario-1;
 }
 
 .servicios {
@@ -590,9 +597,9 @@
     .cards {
         @extend %flex-column-center;
         width: 300px;
-        height: auto;
+        height: 400px;
         border-radius: 30px;
-        background-color: $color-cards;
+        background-color: $color-terciario-2;
         padding: 30px;
         box-shadow: $sombra-oscura;
 
@@ -654,7 +661,7 @@
     label {
         display: block;
         margin-bottom: 15px;
-        color: $color-parrafos;
+        color: $color-secundario-2;
     }
 
     input[type="text"],
@@ -664,10 +671,10 @@
         width: 100%;
         padding: 15px;
         margin-bottom: 10px;
-        background: #222224;
-        color: $color-parrafos;
+        background: $color-terciario-2;
+        color: $color-secundario-2;
         font-size: 16px;
-        border: 1px solid #0D0D0D;
+        border: 1px solid $color-primario-3;
         border-radius: 15px;
 
         &:focus {
@@ -679,12 +686,12 @@
 
     input[type="submit"] {
         width: 100%;
-        color: $color-boton-p;
+        color: $color-secundario-2;
         padding: 16px 24px;
         font-size: 18px;
         line-height: 24px;
-        background: $color-boton-bg;
-        border: 1px solid #0D0D0D;
+        background: $color-terciario-2;
+        border: 1px solid $color-primario-3;
         border-radius: 30px;
         display: inline-block;
         text-align: center;
@@ -693,7 +700,7 @@
         transition: 300ms ease-in-out;
 
         &:hover {
-            background-color: $color-boton-bg-hover;
+            background-color: $color-terciario-1;
         }
     }
 

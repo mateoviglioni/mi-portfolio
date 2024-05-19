@@ -1,4 +1,4 @@
-//! Header Toggler Switches
+//? Toggler Switches
 
 @media screen and (max-width:991px) {
     .collapse {
@@ -9,139 +9,38 @@
     }
 }
 
-//! Header Toggler Switches
-
+//? Toggler Switches
 
 //! Index
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1200px) {
+
+    .container-perfil-profesional {
+        .forma-1 {
+
+            width: 250px;
+            height: 350px;
+        }
+
+        .forma-2 {
+            width: 250px;
+            height: 350px;
+        }
+
+        .forma-3 {
+            width: 250px;
+            height: 350px;
+        }
+    }
 
     .conocimientos {
         .listado-conocimientos {
             display: flex;
             flex-direction: column;
-            margin-top: 30px;
-        }
-    }
-}
 
-@media screen and (max-width:1200px) {
-
-    h2 {
-        animation: none;
-    }
-
-    .sobre-mi {
-        display: flex;
-        flex-direction: column;
-        margin: 0 120px 60px 120px;
-
-        div {
-            p {
-                margin-right: 0;
+            .listado-contenido {
+                padding: 15px 0;
             }
-        }
-
-        .sobre-mi-imagenes {
-            img {
-                margin: 30px 0 0 0;
-                animation: none;
-            }
-        }
-    }
-
-    .container-perfil-profesional {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 120px 60px 120px;
-        animation: none;
-
-        .forma-1 {
-            margin-bottom: 30px;
-
-            &:hover {
-                transform: none;
-                transition: none;
-            }
-        }
-
-        .forma-2 {
-            margin-bottom: 30px;
-
-            &:hover {
-                transform: none;
-                transition: none;
-            }
-        }
-
-        .forma-3 {
-            margin-bottom: 30px;
-
-            &:hover {
-                transform: none;
-                transition: none;
-            }
-        }
-    }
-
-    .conocimientos {
-        .listado-conocimientos {
-            animation: none;
-        }
-    }
-
-    .habilidades {
-        .habilidades-contenedor {
-            animation: none;
-        }
-    }
-
-    .idiomas {
-        .contenedores-idiomas {
-            animation: none;
-
-            .ingles {
-                img {
-                    width: 25px;
-                    height: 25px;
-                    margin: 10px;
-                    overflow: hidden;
-                }
-
-                &:hover {
-                    transform: none;
-                    transition: none;
-
-                    img {
-                        transform: none;
-                    }
-                }
-            }
-
-            .español {
-                img {
-                    width: 25px;
-                    height: 25px;
-                    margin: 10px;
-                    overflow: hidden;
-                }
-
-                &:hover {
-                    transform: none;
-                    transition: none;
-
-                    img {
-                        transform: none;
-                    }
-                }
-            }
-        }
-    }
-
-    .herramientas {
-        .softwares {
-            animation: none;
         }
     }
 
@@ -166,19 +65,44 @@
 
     .presentacion {
         padding: 30px;
+
+        div {
+            h1 {
+                margin-bottom: 15px;
+            }
+        }
+
+        div {
+            ion-icon {
+                margin: 15px 5px 0 0;
+                color: $color-secundario-1;
+            }
+        }
     }
 
-
     .sobre-mi {
+        display: flex;
+        flex-direction: column;
         margin: 0 60px 60px 60px;
+
+        .sobre-mi-imagenes {
+            img {
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .container-perfil-profesional {
+        justify-content: space-between;
     }
 
     .idiomas {
         .contenedores-idiomas {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            margin-top: 30px;
+            animation: none;
         }
     }
 
@@ -186,6 +110,9 @@
         margin: 30px 60px 30px 60px;
     }
 
+    .container-perfil-profesional {
+        margin: 30px 60px 30px 60px;
+    }
 
     .conocimientos {
         margin: 30px 60px 30px 60px;
@@ -206,7 +133,7 @@
     }
 
     footer {
-        background-color: #0F0F0F;
+        background-color: $color-primario-3;
         margin-top: 60px;
         padding: 60px;
     }
@@ -214,25 +141,39 @@
 
 //Separador ---------------------------------------------------------------------------------------------------->
 
-@media screen and (max-width:772px) {
+@media screen and (max-width:950px) {
 
-    .avatar-container {
-        .avatar {
-            width: 250px;
-            height: 250px;
-            border-radius: 25px;
+    .container-perfil-profesional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 15px 60px 30px 60px;
+        animation-range: entry 15% cover 20%;
 
-            img {
-                width: 250px;
-                height: 250px;
+        .forma-1 {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none;
+                transition: none;
             }
         }
-    }
 
-    .presentacion {
-        div {
-            .parrafo-destacado-2 {
-                font-size: 18px;
+        .forma-2 {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none;
+                transition: none;
+            }
+        }
+
+        .forma-3 {
+
+            &:hover {
+                transform: none;
+                transition: none;
             }
         }
     }
@@ -240,7 +181,7 @@
 
 //Separador ---------------------------------------------------------------------------------------------------->
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:772px) {
 
     h1 {
         font-size: 48px;
@@ -261,6 +202,44 @@
     h5 {
         font-size: 18px;
     }
+
+    .avatar-container {
+        .avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .presentacion {
+        padding: 15px;
+
+        div {
+            .parrafo-destacado-2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .herramientas {
+        .logos {
+            .logos-slide {
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width:700px) {
 
     .presentacion {
         height: auto;
@@ -302,10 +281,28 @@
         }
     }
 
+    .idiomas {
+        .contenedores-idiomas {
+            display: flex;
+            flex-direction: column;
+
+            .ingles {
+                margin: 30px;
+            }
+
+            .español {
+                margin: 30px;
+            }
+        }
+    }
+
     .herramientas {
-        img {
-            height: 35px;
-            width: 35px;
+        .logos {
+            .logos-slide {
+                img {
+                    height: 40px;
+                }
+            }
         }
     }
 }
@@ -361,7 +358,7 @@
         div {
             ion-icon {
                 margin: 15px 5px 0 0;
-                color: whitesmoke;
+                color: $color-secundario-1;
             }
         }
     }
@@ -388,6 +385,7 @@
             width: 250px;
             height: 350px;
             border-radius: 20px;
+            margin-top: 30px;
         }
 
         .forma-2 {
@@ -402,7 +400,6 @@
             border-radius: 20px;
         }
     }
-
 
     .conocimientos {
         display: flex;
@@ -441,13 +438,11 @@
         margin: 30px;
 
         .contenedores-idiomas {
-            margin: 15px;
-
             .ingles {
                 width: 200px;
                 height: 200px;
                 border-radius: 15px;
-                margin: 15px;
+                margin: 30px 15px 15px 15px;
                 padding: 15px;
 
                 p {
@@ -490,12 +485,6 @@
 
 @media screen and (max-width:532px) {
 
-    .herramientas {
-        .softwares {
-            display: none;
-        }
-    }
-
     footer {
         .newsletter {
             display: none;
@@ -517,6 +506,21 @@
         }
     }
 
+    .presentacion {
+        padding: 15px;
+    }
+
+    .container-perfil-profesional {
+        .forma-1 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .forma-2 {
+            margin-bottom: 15px;
+        }
+    }
+
     .conocimientos {
         .listado-conocimientos {
             .listado-contenido {
@@ -524,6 +528,19 @@
                     li {
                         font-size: 14px;
                     }
+                }
+            }
+        }
+    }
+
+    .herramientas {
+        .logos {
+            .logos-slide {
+                animation: 15s slide infinite linear;
+
+                img {
+                    height: 30px;
+                    margin: 0 15px;
                 }
             }
         }
@@ -681,10 +698,19 @@
 @media screen and (max-width: 1350px) {
 
     .contenedor-cards {
+        justify-content: space-between;
+    }
+}
+
+//Separador ---------------------------------------------------------------------------------------------------->
+
+@media screen and (max-width: 1200px) {
+
+    .contenedor-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
-        animation: none;
+        animation-range: entry 15% cover 15%;
 
         .cards {
             margin-bottom: 30px;
@@ -703,7 +729,6 @@
             margin-top: 30px;
         }
     }
-
 }
 
 //Separador ---------------------------------------------------------------------------------------------------->
@@ -802,7 +827,13 @@
 
 //Separador ---------------------------------------------------------------------------------------------------->
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:500px) {
+
+    .contacto {
+        p {
+            margin: 15px;
+        }
+    }
 
     .formulario {
         margin: 15px;
