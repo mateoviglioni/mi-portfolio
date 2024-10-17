@@ -44,14 +44,9 @@
     }
 
     div {
-        ion-icon {
-            margin: 30px 5px 0 0;
-            color: $color-secundario-1;
-        }
-
-        p {
-            display: inline-block;
-            text-align: center;
+        .parrafo-destacado-3 {
+            font-size: 18px;
+            color: $color-secundario-2;
         }
     }
 }
